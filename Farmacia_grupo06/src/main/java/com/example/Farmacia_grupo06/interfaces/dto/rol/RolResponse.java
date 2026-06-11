@@ -11,12 +11,12 @@ public class RolResponse implements Serializable {
     private Long rolId;
     private String codigo;
     private String nombre;
-    private Boolean habilitado;
+    //private Boolean habilitado;
 
-    public RolResponse(Long rolId, String codigo, String nombre, Boolean habilitado) {
+    public RolResponse(Long rolId, String codigo, String nombre) {
         this.rolId = rolId;
         this.codigo = codigo;
         this.nombre = nombre;
-        this.habilitado = habilitado;
+        //this.habilitado = habilitado;
     }
 }

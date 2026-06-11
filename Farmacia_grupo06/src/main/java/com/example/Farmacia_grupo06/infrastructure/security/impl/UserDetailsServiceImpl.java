@@ -24,7 +24,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
                 .withUsername(entity.getUsuario())
                 .password(entity.getPassword())
                 .authorities("ROLE_" + entity.getRolId().getCodigo())
-                .accountLocked(!entity.getHabilitado())
                 .build();
     }
 }

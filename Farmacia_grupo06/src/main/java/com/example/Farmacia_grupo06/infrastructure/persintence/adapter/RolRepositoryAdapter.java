@@ -59,7 +59,7 @@ public class RolRepositoryAdapter implements RolRepository {
             entity = jpaRepository.findById(rol.getRolId()).orElseThrow(() -> new RuntimeException("Rol no encontrado"));
             entity.setCodigo(rol.getCodigo());
             entity.setNombre(rol.getNombre());
-            entity.setHabilitado(rol.getHabilitado());
+            //entity.setHabilitado(rol.getHabilitado());
             entity.setModificado(DateUtil.getCurrentLocalDateTime());
 
         } else {

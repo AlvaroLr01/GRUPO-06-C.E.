@@ -11,7 +11,7 @@ public interface RolUseCase {
     RolResponse actualizar(Long id, RolCommand command);
     RolResponse buscarPorId(Long id);
     List<RolResponse> listarTodos();
-    void habilitar(Long id);
-    void deshabilitar(Long id);
+    /*void habilitar(Long id);
+    void deshabilitar(Long id);*/
     void eliminar(Long id);
 }

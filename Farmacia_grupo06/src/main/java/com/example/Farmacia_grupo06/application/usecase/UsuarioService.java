@@ -117,8 +117,8 @@ public class UsuarioService implements UsuarioUseCase {
         RolResponse rolResponse = new RolResponse(
                 u.getRolId().getRolId(),
                 u.getRolId().getCodigo(),
-                u.getRolId().getNombre(),
-                u.getRolId().getHabilitado()
+                u.getRolId().getNombre()
+                //u.getRolId().getHabilitado()
         );
         return new UsuarioResponse(
                 u.getUsuarioId(),

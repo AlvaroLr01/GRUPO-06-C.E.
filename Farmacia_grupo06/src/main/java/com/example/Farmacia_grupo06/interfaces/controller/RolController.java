@@ -41,7 +41,7 @@ public class RolController {
         return ResponseEntity.ok(rolUseCase.listarTodos());
     }
 
-    @PatchMapping("/{id}/habilitar")
+    /*@PatchMapping("/{id}/habilitar")
     public ResponseEntity<Void> habilitar(@PathVariable Long id) {
         rolUseCase.habilitar(id);
         return ResponseEntity.noContent().build();
@@ -51,7 +51,7 @@ public class RolController {
     public ResponseEntity<Void> deshabilitar(@PathVariable Long id) {
         rolUseCase.deshabilitar(id);
         return ResponseEntity.noContent().build();
-    }
+    }*/
 
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<Void> eliminar(@PathVariable Long id) {
