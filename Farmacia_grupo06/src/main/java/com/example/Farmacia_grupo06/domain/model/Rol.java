@@ -10,20 +10,20 @@ public class Rol {
     private Long rolId;
     private String codigo;
     private String nombre;
-    private Boolean habilitado;
+    //private Boolean habilitado;
 
-    public Rol(Long rolId, String codigo, String nombre, Boolean habilitado) {
+    public Rol(Long rolId, String codigo, String nombre) {
         this.rolId = rolId;
         this.codigo = codigo;
         this.nombre = nombre;
-        this.habilitado = habilitado;
+        //this.habilitado = habilitado;
     }
 
-    public void habilitar()    {
+    /*public void habilitar()    {
         this.habilitado = true;
     }
 
     public void deshabilitar() {
         this.habilitado = false;
-    }
+    }*/
 }

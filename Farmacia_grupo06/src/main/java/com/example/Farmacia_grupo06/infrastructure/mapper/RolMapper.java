@@ -12,7 +12,7 @@ public class RolMapper {
         rol.setRolId(entity.getRolId());
         rol.setNombre(entity.getNombre());
         rol.setCodigo(entity.getCodigo());
-        rol.setHabilitado(entity.getHabilitado());
+        //rol.setHabilitado(entity.getHabilitado());
         return rol;
     }
 
@@ -21,7 +21,7 @@ public class RolMapper {
         entity.setRolId(rol.getRolId());
         entity.setCodigo(rol.getCodigo());
         entity.setNombre(rol.getNombre());
-        entity.setHabilitado(rol.getHabilitado());
+        //entity.setHabilitado(rol.getHabilitado());
         return entity;
     }
 }

@@ -24,7 +24,8 @@ public class RolService implements RolUseCase {
             throw new RolDuplicadoException(command.codigo());
         }
 
-        Rol rol = new Rol(null, command.codigo(), command.nombre(), true);
+        Rol rol = new Rol(null, command.codigo(), command.nombre());
+        //Rol rol = new Rol(null, command.codigo(), command.nombre(), true);
         return toResponse(rolRepository.guardar(rol));
     }
 
@@ -60,7 +61,7 @@ public class RolService implements RolUseCase {
                 .toList();
     }
 
-    @Override
+    /*@Override
     public void habilitar(Long id) {
         Rol rol = rolRepository.buscarPorId(id).orElseThrow(() -> new RolNotFoundException(id));
         rol.habilitar();
@@ -73,7 +74,7 @@ public class RolService implements RolUseCase {
                 .orElseThrow(() -> new RolNotFoundException(id));
         rol.deshabilitar();
         rolRepository.guardar(rol);
-    }
+    }*/
 
     @Override
     public void eliminar(Long id) {
@@ -86,8 +87,7 @@ public class RolService implements RolUseCase {
         return new RolResponse(
                 rol.getRolId(),
                 rol.getCodigo(),
-                rol.getNombre(),
-                rol.getHabilitado()
+                rol.getNombre()
         );
     }
 }
